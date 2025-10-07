@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-pink shadow-sm fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Carla Vieira</a>
+    <a class="navbar-brand" href="#">Carla Morais</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -34,13 +34,13 @@
   <h1 class="hero-title">Oi, eu sou a Carla</h1>
   <p class="hero-subtitle"> <span id="typed-text"></span></p>
   <div class="hero-img mt-4">
-    <img src="placeholder-foto.jpg" alt="Carla Jhenifer" class="rounded-circle">
+    <img src="fotoescola.jpg" alt="Carla Jhenifer" class="rounded-circle">
   </div>
 </header>
 
 <!-- Sobre Mim -->
 <section id="sobre-mim" class="container my-5">
-  <h2 class="section-title text-center mb-5">Sobre Mim</h2>
+  <h2 class="section-title text-center mb-5">Meus hobbies</h2>
   <div class="row g-4 justify-content-center">
     <div class="col-md-3 about-card">
       <div class="card h-100 text-center shadow-sm p-3">
@@ -56,12 +56,6 @@
     </div>
     <div class="col-md-3 about-card">
       <div class="card h-100 text-center shadow-sm p-3">
-        <div class="icon">🧘‍♀️</div>
-        <h5>Yoga</h5>
-      </div>
-    </div>
-    <div class="col-md-3 about-card">
-      <div class="card h-100 text-center shadow-sm p-3">
         <div class="icon">📸</div>
         <h5>Fotografia</h5>
       </div>
@@ -72,7 +66,7 @@
 <!-- Participações / Entrevistas -->
 <section id="participacoes" class="bg-light py-5">
   <div class="container">
-    <h2 class="section-title text-center mb-5">Participações e Entrevistas</h2>
+    <h2 class="section-title text-center mb-5">Entrevistas e mídias</h2>
     <div class="row g-4">
       <!-- Card template repetido para todos os links -->
       <!-- Card 1 -->
@@ -124,11 +118,24 @@
       <div class="project-card">
         <div class="project-inner">
           <div class="project-front">
-            <h5>DJÁ Transportes Escolar</h5>
+            <h5>DJA Transportes Escolar</h5>
           </div>
           <div class="project-back">
-            <p>Website de transportes escolares desenvolvido como projeto pessoal.</p>
+            <p>Website de transporte escolar desenvolvido para uma empresa.</p>
             <a href="https://carlajhenifermorais.github.io/DJA-transportes-escolar/" target="_blank" class="btn btn-pink">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h5>Mapeamento de Ribeirão das Neves</h5>
+          </div>
+          <div class="project-back">
+            <p>Website que mapeia os pontos sociais e culturais de Ribeirão das Neves</p>
+            <a href="https://appcaminhoseguro.carrd.co/" target="_blank" class="btn btn-pink">Ver Projeto</a>
           </div>
         </div>
       </div>
@@ -142,8 +149,8 @@
     <h2 class="section-title text-center mb-5">Certificados e Conquistas</h2>
     <div class="certificados-slider">
       <div class="slide"><img src="certificado1.jpg" alt="Certificado 1"></div>
-      <div class="slide"><img src="certificado2.jpg" alt="Certificado 2"></div>
-      <div class="slide"><img src="certificado3.jpg" alt="Certificado 3"></div>
+      <div class="slide"><img src="certificado2.pdf" alt="Certificado 2"></div>
+      <div class="slide"><img src="certificado3.pdf" alt="Certificado 3"></div>
     </div>
   </div>
 </section>
@@ -172,10 +179,9 @@
 // ===== Typing Effect =====
 const typedText = document.getElementById('typed-text');
 const phrases = [
-  "estudante do ensino médio técnico do IFMG.",
-  "apaixonada por tecnologia, arte e empreendedorismo.",
-  "adora ler, filmes, yoga, fotografia e cozinhar.",
-  "sempre buscando novas oportunidades!"
+  "Estudante do 2° ano do ensino médio técnico do IFMG.",
+  "Apaixonada por tecnologia, arte e empreendedorismo.",
+  "Sempre buscando novas oportunidades!"
 ];
 
 let i = 0, j = 0;
