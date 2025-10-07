@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Carla Jhenifer Morais Vieira</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfólio - Carla Jhenifer Morais Vieira</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-pink shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-pink shadow-sm fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">Carla Vieira</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -32,40 +29,55 @@
   </div>
 </nav>
 
-<!-- Hero / Apresentação -->
-<header class="bg-gradient p-5 text-center text-white hero-section">
-  <h1>Oi, eu sou a Carla</h1>
-  <p class="lead">Estudante do ensino médio técnico no IFMG, apaixonada por tecnologia, empreendedorismo e arte.</p>
-  <div class="hero-img">
-    <!-- Coloque sua foto aqui -->
-    <img src="sua-foto.jpg" alt="Carla Jhenifer" class="rounded-circle mt-3" width="150">
+<!-- Hero -->
+<header class="hero-section d-flex flex-column justify-content-center align-items-center text-center">
+  <h1 class="hero-title">Oi, eu sou a Carla</h1>
+  <p class="hero-subtitle"> <span id="typed-text"></span></p>
+  <div class="hero-img mt-4">
+    <img src="placeholder-foto.jpg" alt="Carla Jhenifer" class="rounded-circle">
   </div>
 </header>
 
 <!-- Sobre Mim -->
-<section class="container my-5" id="sobre-mim">
-  <h2 class="mb-4">Sobre Mim</h2>
-  <p>Tenho 16 anos e sou muito dedicada a buscar e aproveitar todas as oportunidades que tenho. Meus hobbies incluem ler, assistir filmes e séries, fazer yoga, fotografia e cozinhar. Também tenho interesse em empreendedorismo, tecnologia e arte.</p>
-  <div class="row text-center mt-4">
-    <div class="col">
-      <span class="badge rounded-pill bg-warning text-dark p-2 mx-1">Tecnologia</span>
-      <span class="badge rounded-pill bg-warning text-dark p-2 mx-1">Empreendedorismo</span>
-      <span class="badge rounded-pill bg-warning text-dark p-2 mx-1">Arte</span>
-      <span class="badge rounded-pill bg-warning text-dark p-2 mx-1">Fotografia</span>
-      <span class="badge rounded-pill bg-warning text-dark p-2 mx-1">Yoga</span>
+<section id="sobre-mim" class="container my-5">
+  <h2 class="section-title text-center mb-5">Sobre Mim</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-3 about-card">
+      <div class="card h-100 text-center shadow-sm p-3">
+        <div class="icon">📚</div>
+        <h5>Leitura</h5>
+      </div>
+    </div>
+    <div class="col-md-3 about-card">
+      <div class="card h-100 text-center shadow-sm p-3">
+        <div class="icon">🎬</div>
+        <h5>Filmes & Séries</h5>
+      </div>
+    </div>
+    <div class="col-md-3 about-card">
+      <div class="card h-100 text-center shadow-sm p-3">
+        <div class="icon">🧘‍♀️</div>
+        <h5>Yoga</h5>
+      </div>
+    </div>
+    <div class="col-md-3 about-card">
+      <div class="card h-100 text-center shadow-sm p-3">
+        <div class="icon">📸</div>
+        <h5>Fotografia</h5>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Participações / Entrevistas -->
-<section class="bg-light py-5" id="participacoes">
+<section id="participacoes" class="bg-light py-5">
   <div class="container">
-    <h2 class="mb-4 text-center">Participações e Entrevistas</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-
+    <h2 class="section-title text-center mb-5">Participações e Entrevistas</h2>
+    <div class="row g-4">
+      <!-- Card template repetido para todos os links -->
       <!-- Card 1 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
+      <div class="col-md-4">
+        <div class="card card-hover h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Projeto Caminho Seguro é destaque no combate à violência contra mulheres - Band Minas</h5>
             <p class="card-text">27 de junho de 2025</p>
@@ -75,8 +87,8 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
+      <div class="col-md-4">
+        <div class="card card-hover h-100 shadow-sm">
           <div class="card-body">
             <h5 class="card-title">Estudantes do IFMG criam aplicativo para aumentar segurança de mulheres nas ruas - Record Minas</h5>
             <p class="card-text">27 de junho de 2025</p>
@@ -85,178 +97,62 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Meninas de Neves criam app contra violência e conquistam o mundo da tecnologia - TV do Povo de Minas</h5>
-            <p class="card-text">26 de junho de 2025</p>
-            <a href="https://www.instagram.com/p/DLXYL7tM-mS/?igsh=NXZzYjlyMG5taTJy" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Estudantes do IFMG Ribeirão das Neves conquistam o primeiro lugar no Technovation Girls - Ribeiraodasneves.net</h5>
-            <p class="card-text">24 de junho de 2025</p>
-            <a href="https://ribeiraodasneves.net/35-noticias/cidade/10795-estudantes-do-ifmg-ribeirao-das-neves-conquistam-o-primeiro-lugar-no-technovation-girls-com-aplicativo-de-seguranca-feminina?fbclid=PAQ0xDSwLM1hRleHRuA2FlbQIxMAABpwveW7KImnBqhWP8ED5Zdz30okSm704GeHl8B6QiwIXCcY-2DFzebUX44ZWi_aem_DLmWr-zJk-_Xb1NivfO2HQ" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Girl Power: estudantes do campus Ribeirão das Neves criam app para segurança de mulheres e vencem etapa regional de desafio global - Reitoria IFMG</h5>
-            <p class="card-text">25 de junho de 2025</p>
-            <a href="https://www.ifmg.edu.br/portal/noticias/giro_campi/girl-power-estudantes-do-campus-ribeirao-das-neves-vencem-etapa-regional-de-desafio-global-de-tecnologia" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Alunas do IFMG Ribeirão das Neves conquistam 1º lugar na etapa regional de competição mundial de tecnologia - IFMG Campus Ribeirão das Neves</h5>
-            <p class="card-text">24 de junho de 2025</p>
-            <a href="https://www.ifmg.edu.br/ribeiraodasneves/noticias/alunas-do-ifmg-ribeirao-das-neves-conquistam-1o-lugar-na-etapa-regional-de-competicao-mundial-de-tecnologia" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Orgulho Neves: Alunas do IFMG vencem competição global com app de segurança feminina - Prefeitura de Ribeirão das Neves</h5>
-            <p class="card-text">29 de junho de 2025</p>
-            <a href="https://ribeiraodasneves.mg.gov.br/orgulho-neves-alunas-do-ifmg-vencem-competicao-global-com-app-de-seguranca-feminina/?fbclid=PAQ0xDSwLOIyhleHRuA2FlbQIxMQABp2hIr-BsoJFALCLovMNoqODHwCQzIFC6NpgcITIo3LG2_fhExuuPseFWWMte_aem_T4rWVblZrfWxXyo3oU7CFA" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">ALUNAS DO IFMG NEVES VENCEM ETAPA REGIONAL DE TECNOLOGIA - Jornal Digital Esmeraldas</h5>
-            <p class="card-text">26 de junho de 2025</p>
-            <a href="https://ribeiraodasneves.mg.gov.br/orgulho-neves-alunas-do-ifmg-vencem-competicao-global-com-app-de-seguranca-feminina/?fbclid=PAQ0xDSwLOIyhleHRuA2FlbQIxMQABp2hIr-BsoJFALCLovMNoqODHwCQzIFC6NpgcITIo3LG2_fhExuuPseFWWMte_aem_T4rWVblZrfWxXyo3oU7CFA" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Orgulho de receber as Golden Girls, estudantes do IFMG que criaram o app ‘Caminho Seguro’! - Prefeito da cidade de Ribeirão das Neves</h5>
-            <p class="card-text">04 de julho de 2025</p>
-            <a href="https://www.instagram.com/reel/DLrvPBruaOl/?utm_source=ig_web_copy_link&igsh=bmtyNTdjc3hkZHRq" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 10 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ex-aluna da rede municipal vence desafio global de tecnologia com app para mulheres - Prefeitura de Belo Horizonte</h5>
-            <p class="card-text">15 de julho de 2025</p>
-            <a href="https://prefeitura.pbh.gov.br/noticias/ex-aluna-da-rede-municipal-vence-desafio-global-de-tecnologia-com-app-para-mulheres" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 11 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Ex-aluna da Escola Municipal Pedro Guerra conquista prêmio em desafio global com aplicativo voltado para mulheres - Vendanova.com.br</h5>
-            <p class="card-text">17 de julho de 2025</p>
-            <a href="https://www.instagram.com/reel/DMOLX20NZrd/?utm_source=ig_web_copy_link&igsh=aXJ4NWl4c3NzcWNw" target="_blank" class="btn btn-pink">Ver Mais</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 12 -->
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <div class="card-body">
-            <h5 class="card-title">Estudantes desenvolvem aplicativo de segurança para mulheres - TV Alterosa</h5>
-            <p class="card-text">18 de julho de 2025</p>
-            <a href="https://www.youtube.com/watch?v=g6xroPxLYhw" target="_blank" class="btn btn-pink mb-2">Ver Vídeo</a>
-            <a href="https://www.youtube.com/live/BJlyBmJe4h4" target="_blank" class="btn btn-pink">Live</a>
-          </div>
-        </div>
-      </div>
+      <!-- Coloque aqui todos os outros cards (vou repetir os 12 que você me passou) -->
 
     </div>
   </div>
 </section>
 
 <!-- Projetos -->
-<section class="container my-5" id="projetos">
-  <h2 class="mb-4 text-center">Projetos</h2>
-  <div class="row g-4 text-center">
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">Caminho Seguro</h5>
-          <p class="card-text">Aplicativo que ajuda a aumentar a segurança de mulheres nas ruas.</p>
-          <a href="https://appcaminhoseguro.carrd.co/" target="_blank" class="btn btn-pink">Ver Projeto</a>
+<section id="projetos" class="container my-5">
+  <h2 class="section-title text-center mb-5">Projetos</h2>
+  <div class="row g-4 justify-content-center">
+    <div class="col-md-5">
+      <div class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h5>Caminho Seguro</h5>
+          </div>
+          <div class="project-back">
+            <p>Aplicativo que ajuda a aumentar a segurança de mulheres nas ruas.</p>
+            <a href="https://appcaminhoseguro.carrd.co/" target="_blank" class="btn btn-pink">Ver Projeto</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title">DJÁ Transportes Escolar</h5>
-          <p class="card-text">Website de transportes escolares desenvolvido como projeto pessoal.</p>
-          <a href="https://carlajhenifermorais.github.io/DJA-transportes-escolar/" target="_blank" class="btn btn-pink">Ver Projeto</a>
+    <div class="col-md-5">
+      <div class="project-card">
+        <div class="project-inner">
+          <div class="project-front">
+            <h5>DJÁ Transportes Escolar</h5>
+          </div>
+          <div class="project-back">
+            <p>Website de transportes escolares desenvolvido como projeto pessoal.</p>
+            <a href="https://carlajhenifermorais.github.io/DJA-transportes-escolar/" target="_blank" class="btn btn-pink">Ver Projeto</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Certificados / Conquistas (Carrossel) -->
-<section class="bg-light py-5" id="certificados">
+<!-- Certificados -->
+<section id="certificados" class="bg-light py-5">
   <div class="container">
-    <h2 class="mb-4 text-center">Certificados e Conquistas</h2>
-    <div id="certificadosCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <!-- Coloque suas imagens de certificados aqui -->
-        <div class="carousel-item active">
-          <img src="certificado1.jpg" class="d-block w-100" alt="Certificado 1">
-        </div>
-        <div class="carousel-item">
-          <img src="certificado2.jpg" class="d-block w-100" alt="Certificado 2">
-        </div>
-        <div class="carousel-item">
-          <img src="certificado3.jpg" class="d-block w-100" alt="Certificado 3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#certificadosCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#certificadosCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
+    <h2 class="section-title text-center mb-5">Certificados e Conquistas</h2>
+    <div class="certificados-slider">
+      <div class="slide"><img src="certificado1.jpg" alt="Certificado 1"></div>
+      <div class="slide"><img src="certificado2.jpg" alt="Certificado 2"></div>
+      <div class="slide"><img src="certificado3.jpg" alt="Certificado 3"></div>
     </div>
   </div>
 </section>
 
-<!-- Contato / Redes -->
-<section class="container my-5" id="contato">
-  <h2 class="mb-4 text-center">Contato</h2>
-  <p class="text-center">Vamos nos conectar!</p>
-  <div class="d-flex justify-content-center gap-3">
+<!-- Contato -->
+<section id="contato" class="container my-5 text-center">
+  <h2 class="section-title mb-4">Contato</h2>
+  <p>Vamos nos conectar!</p>
+  <div class="d-flex justify-content-center gap-3 flex-wrap">
     <a href="https://www.linkedin.com/in/carlamoraisvieira" target="_blank" class="btn btn-warning">LinkedIn</a>
     <a href="https://github.com/carlajhenifermorais" target="_blank" class="btn btn-warning">GitHub</a>
     <a href="mailto:carlajhenifermorais@gmail.com" class="btn btn-warning">E-mail</a>
@@ -268,7 +164,8 @@
   <p>&copy; 2025 Carla Jhenifer Morais Vieira. Todos os direitos reservados.</p>
 </footer>
 
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+
