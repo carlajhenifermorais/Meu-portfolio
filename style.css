@@ -1,0 +1,48 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Hero */
+  .hero-section {
+    background: linear-gradient(135deg, #ff9ec1, #ffd166);
+  }
+  
+  /* Cards */
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Buttons */
+  .btn-warning {
+    background-color: #ff79a6;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-warning:hover {
+    background-color: #ff4c8b;
+    color: #fff;
+  }
+  
+  /* Carousel */
+  .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Footer / Contato */
+  #contato a {
+    text-decoration: none;
+    color: #ff79a6;
+    font-weight: bold;
+  }
+  
+  #contato a:hover {
+    color: #ff4c8b;
+  }
+  
